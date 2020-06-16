@@ -1,8 +1,48 @@
 /*******************************************************************************
  * Your code here!
  ******************************************************************************/
+if(!getInput(1)) {
+ let input = getInput(0);
+
+if(input % 3 === 0 && input % 5 === 0)
+  console.log('FizzBuzz');
+
+else if(input % 3 === 0)
+  console.log("Fizz");
+
+else if(input % 5 === 0)
+  console.log('Buzz')
+
+else if(input % 3 !== 0 && input % 5 !== 0)
+  console.log(input);
+// else
+//   console.log(input);
+
+}
+
+else if(getInput(1)) {
+  let inputArr = [0, 0, 0];
+  for(let i = 0; i < inputArr.length; i++) {
+    inputArr[i] = getInput(i);
+  }
 
 
+let number = inputArr[0];
+let fizz = inputArr[1];
+let buzz = inputArr[2];
+
+if(number % fizz == 0 && number % buzz == 0)
+  console.log("FizzBuzz");
+
+else if(number % fizz == 0)
+  console.log("Fizz");
+
+else if(number % buzz == 0)
+  console.log("Buzz");
+
+else
+  console.log(number);
+}
 
 
 
